@@ -1,0 +1,23 @@
+OOP:  uses objects and classes to organize and manage code in a way that promotes reusability, scalability, and maintainability.
+1. Encapsulation is the principle of bundling the data (attributes) and methods (functions) that operate on the data into a single unit, known as a class. It also involves restricting direct access to some of an object's components, which is typically done using access specifiers:
+public: Members are accessible from outside the class.
+private: Members are accessible only within the class.
+protected: Members are accessible within the class and by derived classes.
+
+2.Inheritance allows a new class (derived class) to inherit attributes and methods from an existing class (base class). This promotes code reusability and establishes a hierarchical relationship between classes.
+Base Class: The class being inherited from.
+Derived Class: The class that inherits from the base class
+
+3.Polymorphism means designing objects to share behaviors. Using inheritance, objects can override shared parent behaviors with specific child behaviors. Polymorphism allows the same method to execute different behaviors in two ways
+Compile-time Polymorphism (or Static Polymorphism): Achieved through function overloading and operator overloading.
+Run-time Polymorphism (or Dynamic Polymorphism): Achieved through inheritance and virtual functions.
+
+4.Abstraction
+Abstraction is the concept of hiding the complex implementation details of a class and exposing only the necessary and relevant parts. It can be achieved using abstract classes and interfaces.
+
+
+
+---------------------------------------------
+Private: chỉ sử dụng trong class
+Public: sử dụng global
+Protect: chỉ sử dụng trong class và class kế thừa
