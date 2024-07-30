@@ -1,1 +1,10 @@
+Thuộc tính(atribute) <=> biến(variable)
+Phương thức(method) <=> hàm(function)
 
+2./ Trong C++, "this" là một con trỏ đặc biệt, được sử dụng bên trong các phương thức của lớp để tham chiếu đến đối tượng hiện tại mà phương thức đó đang làm việc.
+
+3./ Sử dụng toán tử phạm vi :: để khai báo hàm trong class và định nghĩa hàm ngoài class
+
+4./ Phương thức có thể truyền tham số là đối tượng:
+void My_Time::add(My_Time T1, My_Time T2) {
+};
