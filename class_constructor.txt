@@ -8,3 +8,11 @@ Phương thức(method) <=> hàm(function)
 4./ Phương thức có thể truyền tham số là đối tượng:
 void My_Time::add(My_Time T1, My_Time T2) {
 };
+
+5./ Constructor là hàm dùng để khởi tạo đối tượng, cùng tên với Class, không có kiểu trả về, phải được khởi tạo ở scope public, Constructor được gọi khi khởi tạo đối tượng.
+Nếu bạn không viết hàm constructor cho một lớp trong C++, trình biên dịch sẽ tự động tạo ra một constructor mặc định cho lớp đó. Constructor mặc định do trình biên dịch tạo ra sẽ không làm gì đặc biệt; nó chỉ đơn giản khởi tạo các biến thành viên của lớp với giá trị mặc định của chúng (zero cho kiểu số nguyên, nullptr cho con trỏ, v.v.).
+
+-- Có 3 loại constructor:
+Default constructor
+Parameterize constructor
+Copy constructor
