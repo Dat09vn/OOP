@@ -13,6 +13,6 @@ void My_Time::add(My_Time T1, My_Time T2) {
 Nếu bạn không viết hàm constructor cho một lớp trong C++, trình biên dịch sẽ tự động tạo ra một constructor mặc định cho lớp đó. Constructor mặc định do trình biên dịch tạo ra sẽ không làm gì đặc biệt; nó chỉ đơn giản khởi tạo các biến thành viên của lớp với giá trị mặc định của chúng (zero cho kiểu số nguyên, nullptr cho con trỏ, v.v.).
 
 -- Có 3 loại constructor:
-Default constructor
-Parameterize constructor
+Default constructor: Không có tham số tryền vào
+Parameterize constructor: Có tham số truyền vào, overloaded constructor
 Copy constructor
