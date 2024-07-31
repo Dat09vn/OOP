@@ -15,4 +15,6 @@ Nếu bạn không viết hàm constructor cho một lớp trong C++, trình bi�
 -- Có 3 loại constructor:
 Default constructor: Không có tham số tryền vào
 Parameterize constructor: Có tham số truyền vào, overloaded constructor(MyClass(); and MyClass(int data);)
-Copy constructor
+Copy constructor: 
+  1.1. Sao chép thông thường: Student st1(Dat, HN); Student st2; st2 = st1;   
+  1.2. Copy constructor: tạo dối tượng mới giống đối tượng cũ một số đặc điểm: Studemt(const Student & st) {this->name = st.name}
