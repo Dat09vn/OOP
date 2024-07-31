@@ -14,5 +14,5 @@ Nếu bạn không viết hàm constructor cho một lớp trong C++, trình bi�
 
 -- Có 3 loại constructor:
 Default constructor: Không có tham số tryền vào
-Parameterize constructor: Có tham số truyền vào, overloaded constructor
+Parameterize constructor: Có tham số truyền vào, overloaded constructor(MyClass(); and MyClass(int data);)
 Copy constructor
