@@ -19,3 +19,9 @@ Copy constructor: https://freetuts.net/ham-xay-dung-sao-chep-trong-c++-1791.html
   1.1. Shallow copy: Student st1(Dat, HN); Student st2; st2 = st1;   --> mặc định sao chép toàn bộ các biến, "con trỏ của cả hai đối tượng đều trỏ đến cùng 1 vùng nhớ"
   1.2. Copy constructor: tạo dối tượng mới giống đối tượng cũ một số đặc điểm: Studemt(const Student & st) {this->name = st.name} --> this->age vẫn là giá trị cũ
        Deep copy cấp phát bộ nhớ cho bản sao và sau đó copy giá trị thực cho bản sao --> "sẽ không chia sẻ vùng nhớ"
+
+6./ Destructor
+Destructor được gọi ngay khi đối tượng bị thu hồi
+Thường dùng để dọn dẹp dữ liệu khi một đối tượng bị hủy
+Một class chỉ có một hàm Destructor duy nhất
+Được gọi tự dộng khi đối tượng hết phạm vi sử dụng
