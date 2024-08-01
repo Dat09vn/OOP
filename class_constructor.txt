@@ -25,3 +25,12 @@ Destructor được gọi ngay khi đối tượng bị thu hồi
 Thường dùng để dọn dẹp dữ liệu khi một đối tượng bị hủy
 Một class chỉ có một hàm Destructor duy nhất
 Được gọi tự dộng khi đối tượng hết phạm vi sử dụng
+
+7./ Static data member, static member function
+
+Static data member: Tạo một bản duy nhất tồn tại trong suốt quá trình chạy của chương trình.
+Dùng chung cho tất cả các dối tượng của lớp.
+Phải được định nghĩa bên ngoài class vì static được lưu trữ riêng biệt, không giống như các thành phần khác của đối tượng
+Giá trị khởi tạo = 0;
+Static function member: chỉ có thể truy cập đến thành viên static
+Có thể được gọi qua tên class ngay khi không có đối tượng nào của lớp tồn tại
