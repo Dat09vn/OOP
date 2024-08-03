@@ -10,6 +10,6 @@
    
    ![image](https://github.com/user-attachments/assets/720cd791-e860-4e22-b7aa-c3826fcfa59c)
    
-  Bảng rút gọn:
+4. Bảng rút gọn:
   
-    ![image](https://github.com/user-attachments/assets/e187a73a-b922-4be0-abbc-b70bed5715bd)
+   ![image](https://github.com/user-attachments/assets/e187a73a-b922-4be0-abbc-b70bed5715bd)
