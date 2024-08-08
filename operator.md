@@ -8,4 +8,16 @@
    Lớp bạn: class X là bạn của class Z --> X có thể truy cập đến các thuộc tính của Z.
    Một class có thể có nhiều hàm bạn, và một hàm có thể là hàm bạn của nhiều class.
 
-2. 
+2. Nạp chồng toán tử:
+   Có 3 cách sử dụng: member function, non-member function, friend function
+   Example:
+   //declarce
+   PhanSo operator+(PhanSo ps);
+   friend PhanSo operator*(PhanSo ps1, PhanSo ps2);
+   //define
+   PhanSo operator*(PhanSo ps1, PhanSo ps2) {
+       PhanSo tmp;
+       tmp.TuSo = ps1.TuSo*ps2.TuSo;
+       tmp.MauSo = ps1.MauSo*ps2.MauSo;
+       return tmp;
+   }
