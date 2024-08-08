@@ -1,0 +1,19 @@
+1. Vùng chọn kiểu: Có thể lưu các đối tượng khác nhau và thao tác khác nhau với từng đối tượng.
+Đối tượng của lớp cha có thể chỉ định trỏ tới đối tượng của lớp con sử dụng cách ép kiểu. Nhưng nhược điểm: code phức tạp, dài dòng, khó bảo trì, nâng cấp
+Example:
+    Employee *employee1;
+    ((Office_employee *)employee1)->input(); //casting base obj to derived obj --> we can call method of derived class
+    ((Office_employee *)employee1)->output();
+
+2. Đa hình
+  Tính đa hình xuất hiện khi có sự kế thừa giữa các lớp
+  Thay vì sử dụng vùng chọn kiểu phức tạp như trên, ta có thể sử dung virtual function để lớp cha trỏ đến lớp con một cách dễ dàng.
+  Base class pointers can point to derived class objects: This is the essence of polymorphism.
+  Derived class pointers should not point to base class objects: This can lead to undefined behavior and is generally unsafe.
+  Use virtual functions: To ensure that the correct function implementations are called when using base class pointers to refer to derived class objects.
+2.1 virtual function: nếu class con không override lại function của cha --> cha trỏ đến con nhưng nó vẫn thực thi hàm virtual function của cha. 
+    virtual function --> gọi được hàm của cả class cha lẫn class con
+2.2 Pure virtual function: các class con bắt buộc phải override lại function của cha
+    --> không thể gọi được hàm của class cha
+    Không thể tạo đối tượng của lớp trừu tượng, nhưng có thể tạo con trỏ và tham chiếu
+    Những lớp được kế thừa từ lớp trừu tượng phải định nghĩa hàm thuần ảo, nếu không lớp đó cũng sẽ trở thành lớp trừ tượng
