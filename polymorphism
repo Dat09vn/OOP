@@ -17,3 +17,4 @@ Example:
     --> không thể gọi được hàm của class cha
     Không thể tạo đối tượng của lớp trừu tượng, nhưng có thể tạo con trỏ và tham chiếu
     Những lớp được kế thừa từ lớp trừu tượng phải định nghĩa hàm thuần ảo, nếu không lớp đó cũng sẽ trở thành lớp trừ tượng
+    https://www.geeksforgeeks.org/pure-virtual-functions-and-abstract-classes/
