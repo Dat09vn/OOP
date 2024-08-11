@@ -1,2 +1,3 @@
 Giúp tách đoạn code xử lý lỗi riêng so với code logic if-else.
-Một Exception (ngoại lệ) là một vấn đề xuất hiện trong khi thực thi một chương trình, làm gián đoạn chương trình. Một Exception trong C++ là một phản hồi về một tình huống ngoại lệ mà xuất hiện trong khi một chương trình đang chạy, ví dụ như chia cho số 0.
+Một Exception (ngoại lệ) là một vấn đề xuất hiện trong khi thực thi một chương trình, làm gián đoạn chương trình.
+Một Exception trong C++ là một phản hồi về một tình huống ngoại lệ mà xuất hiện trong khi một chương trình đang chạy, ví dụ như chia cho số 0.
