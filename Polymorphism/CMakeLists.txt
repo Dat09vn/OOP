@@ -1,6 +1,0 @@
-cmake_minimum_required(VERSION 3.0.0)
-project(ke_thua)
-# message(${CMAKE_CURRENT_SOURCE_DIR})
-include_directories(${CMAKE_CURRENT_SOURCE_DIR}/include)
-file(GLOB SOURCES ${CMAKE_CURRENT_SOURCE_DIR}/src/*.cpp)
-add_executable(app ${SOURCES})
