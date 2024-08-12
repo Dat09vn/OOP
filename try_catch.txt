@@ -1,3 +1,12 @@
 Giúp tách đoạn code xử lý lỗi riêng so với code logic if-else.
 Một Exception (ngoại lệ) là một vấn đề xuất hiện trong khi thực thi một chương trình, làm gián đoạn chương trình.
 Một Exception trong C++ là một phản hồi về một tình huống ngoại lệ mà xuất hiện trong khi một chương trình đang chạy, ví dụ như chia cho số 0.
+
+Property 1: There is a special catch block called the ‘catch-all’ block, written as catch(…), that can be used to catch all types of exceptions.
+Property 2: Implicit type conversion doesn’t happen for primitive types.
+Property 3: If an exception is thrown and not caught anywhere, the program terminates abnormally.
+Property 4:
+Property 5: In C++, try/catch blocks can be nested. Also, an exception can be re-thrown using “throw; “. 
+Property 6: When an exception is thrown, all objects created inside the enclosing try block are destroyed before the control is transferred to the catch block.
+
+VD: Dùng try-catch khi muốn gọi hàm của lib mà mình không kiểm soát được nó. Vd trong mỗi hàm gọi post, subscribe tới lib, ta cần sử dụng try-catch để lỡ nó không post được thì sẽ bắt exception.
