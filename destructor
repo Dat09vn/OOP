@@ -11,6 +11,8 @@ Deleting a derived class object using a pointer of base class type that has a no
 --------private destructor------------
 Whenever we want to control the destruction of objects of a class, we make the destructor private.
   --> need to use friend function or class instance method to delete this object.
+When we use private destructor: avoid external delete this object, singleton pattern, when using smart pointer --> ensure that objects are only deleted when their reference count drops to zero.
+Example:
 private:
   ~parent() { cout << "destructor called" << endl; }
 public:
