@@ -25,7 +25,9 @@ public:
 
 int main() {
     Base* basePtr = new Derived();  // Base pointer to a Derived object
-    //Base* basePtr = new Base();  // Wrong
+    //Base* basePtr = new Base();  // Wrong Since basePtr points to an instance of Base and not an instance of Derived, the dynamic_cast will fail.
+    //The result of dynamic_cast will be nullptr because the actual type of the object is Base, not Derived.
+
     // Use dynamic_cast to cast basePtr to Derived*
     Derived* derivedPtr = dynamic_cast<Derived*>(basePtr);
     
@@ -39,3 +41,7 @@ int main() {
     return 0;
 }
 ```
+
+note: but upcasting is still ok:
+    Derived *derived = new Derived();
+    Base *base = dynamic_cast<Base*> (derived)
